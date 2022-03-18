@@ -1,0 +1,13 @@
+{
+    "0x001Daa61Eaa241A8D89607194FC3b1184dcB9B4C": {
+        "address": "0x001Daa61Eaa241A8D89607194FC3b1184dcB9B4C",
+        "itemID": "0",
+        "amount": "1000000"
+    },
+    "dropDetails": {
+        "contractAddress": "0x027Ffd3c119567e85998f4E6B9c3d83D5702660c",
+        "merkleroot": "0xc47b458e84f72d61eb4ab3f1fcc025f3cd2a00cc80aa6c6efa1dbdef03ae6899"
+    }
+}
+
+

@@ -7,13 +7,18 @@ import { ethers } from "hardhat";
 
 async function main() {
 
-  const Token = await ethers.getContractFactory("KVN")
-  const token = await Token.deploy(20000);
-   await ethers.getSigners()
-  const receipt = await token.address;
-  console.log(receipt);
-  // 0x0c0014c341526c52Abf1Cb64F9C764519075E45d wallet address
+  const wallet = "0x0c0014c341526c52Abf1Cb64F9C764519075E45d";
   // 0x19638E0FCD5c01C2a17302AADECB849950D2b798  disployAddress
+const ContractClaim = await ethers.getContractFactory("MerkleAirdropFacet");
+const contract = await ContractClaim.deploy();
+await contract.deployed();
+const addr = contract.address;
+console.log(addr)
+
+// 0xb956e0Bc6Bf85d1777b281c4a74b375005bb1f48
+
+
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere
