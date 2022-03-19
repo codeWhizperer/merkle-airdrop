@@ -12,15 +12,15 @@ function main() {
 
   ///files for each ardrop
   // import distribution from this file
-  const filename = path.join(__dirname, "gen_files/address.csv");
+  const filename = path.join(__dirname, "gen_files/data.csv");
 
   // what file should we write the merkle proofs too?
-  const output_file = path.join(__dirname, "gen_files/address.json");
+  const output_file = path.join(__dirname, "gen_files/claimer.json");
 
   //file that has the user claim list
   const userclaimFile = path.join(
     __dirname,
-    "gen_files/address2.json"
+    "gen_files/claimer2.json"
   );
 
   //contract of items being sent out
@@ -111,5 +111,3 @@ function main() {
   }
 }
 main();
-
-//exports.allOps=write_leaves();
